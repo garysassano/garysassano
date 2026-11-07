@@ -20,6 +20,7 @@ jobs:
       - uses: garysassano/kleos@main
         with:
           designs: D01 A05
+          outcomes: none # PRs as one number, no merged or open split
           ecosystems: |
             AWS: ^(aws|awslabs|aws-.*|amazon-.*)$
             OpenTelemetry: ^open-telemetry$
