@@ -1,0 +1,30 @@
+name: kleos
+
+on:
+  schedule:
+    - cron: "17 4 * * *" # daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kleos
+  cancel-in-progress: false
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: garysassano/kleos@main
+        with:
+          designs: D01 A05
+          ecosystems: |
+            AWS: ^(aws|awslabs|aws-.*|amazon-.*)$
+            OpenTelemetry: ^open-telemetry$
+            jdx: ^jdx$
+            HashiCorp: ^hashicorp$
+            Microsoft: ^(microsoft|Azure)$
+            GitHub: ^(github|actions|integrations)$
+            Cloudflare: ^cloudflare$
