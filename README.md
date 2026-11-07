@@ -4,6 +4,6 @@
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="kleos/A05-ecosystem-rollup-dark.svg">
-  <img alt="Contributions by ecosystem: AWS, OpenTelemetry, jdx, HashiCorp, Microsoft, GitHub and Cloudflare" src="kleos/A05-ecosystem-rollup-light.svg" width="840">
+  <source media="(prefers-color-scheme: dark)" srcset="kleos/A07-ecosystem-rollup-repos-dark.svg">
+  <img alt="Contributions by ecosystem, with the top repos in each: aws-cdk, mise, terraform-provider-aws and more" src="kleos/A07-ecosystem-rollup-repos-light.svg" width="840">
 </picture>
