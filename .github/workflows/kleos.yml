@@ -19,13 +19,9 @@ jobs:
       - uses: actions/checkout@v7
       - uses: garysassano/kleos@main
         with:
-          designs: D01 A05 owners=no repos=3
-          outcomes: none # PRs as one number, no merged or open split
+          designs: |
+            D01
+            A05 owners=no repos=3
+          pr-outcomes: none # PRs as one number, no merged or open split
           ecosystems: |
-            AWS: ^(aws|awslabs|aws-.*|amazon-.*)$
-            OpenTelemetry: ^open-telemetry$
             jdx: ^jdx$
-            HashiCorp: ^hashicorp$
-            Microsoft: ^(microsoft|Azure)$
-            GitHub: ^(github|actions|integrations)$
-            Cloudflare: ^cloudflare$
